@@ -1,0 +1,188 @@
+$content-heading-color: $text-strong;
+$content-heading-weight: $weight-bold;
+$content-heading-line-height: 1.125;
+
+$content-blockquote-background-color: $background;
+$content-blockquote-border-left: 5px solid $border;
+$content-blockquote-padding: 24px;
+
+$content-pre-padding: 24px;
+
+$content-table-cell-border: 1px solid $border;
+$content-table-cell-border-width: 0 0 1px;
+$content-table-cell-padding: 0.5em 0.75em;
+$content-table-cell-heading-color: $text-strong;
+$content-table-head-cell-border-width: 0 0 2px;
+$content-table-head-cell-color: $text-strong;
+$content-table-foot-cell-border-width: 2px 0 0;
+$content-table-foot-cell-color: $text-strong;
+
+$content-element-spacing: 24px;
+$content-list-item-spacing: 12px;
+$content-left-indent: 32px;
+
+$content-figure-margin: 24px; 
+
+.content{
+    h1, h2, h3, h4, h5, h6{
+        color: $content-heading-color;
+        font-weight: $content-heading-weight;
+        line-height: $content-heading-line-height;
+        margin-bottom: $content-element-spacing;
+        font-family: $family-secondary;
+        
+        &:not(:first-child){
+            margin-top: $content-element-spacing;
+        }
+    }
+    h1{
+        font-size: $size-1;
+        font-weight: $weight-normal;
+    }
+    h2{
+        font-size: $size-2;
+        font-weight: $weight-normal;
+    }
+    h3{
+        font-size: $size-3;
+    }
+    h4{
+        font-size: $size-4;
+    }
+    h5{
+        font-size: $size-5;
+    }
+    h6{
+        font-size: $size-6;
+    }
+    li + li{
+        margin-top: $content-list-item-spacing;
+    }
+    p, dl, ol, ul, blockquote, pre, table{
+        &:not(:last-child){
+            margin-bottom: $content-element-spacing;
+        }
+    }
+    blockquote{
+        background-color: $content-blockquote-background-color;
+        border-left: $content-blockquote-border-left;
+        padding: $content-blockquote-padding;
+    }
+    ol, ul{
+        margin-left: $content-left-indent;
+        margin-top: $content-element-spacing;
+    }
+    ol{
+        list-style-position: outside;
+
+        &:not([type]){
+            list-style-type: decimal;
+            &.is-lower-alpha{
+                list-style-type: lower-alpha;
+            }
+            &.is-lower-roman{
+                list-style-type: lower-roman;
+            }
+            &.is-upper-alpha{
+                list-style-type: upper-alpha;
+            }
+            &.is-upper-roman{
+                list-style-type: upper-roman;
+            }
+        }
+    }
+    ul{
+        list-style: disc outside;
+        ul{
+            list-style-type: circle;
+            margin-top: $content-list-item-spacing;
+            ul{
+                list-style-type: square;
+            }
+        }
+    }
+    dd{   
+        margin-left: $content-left-indent;
+    }
+    figure{
+        margin-left: $content-figure-margin;
+        margin-right: $content-figure-margin;
+        text-align: center;
+        &:not(:first-child){
+            margin-top: $content-figure-margin;
+        }
+        &:not(:last-child){
+            margin-bottom: $content-figure-margin;
+        }
+        img{
+            display: inline-block;
+        }
+        figcaption{
+            font-style: italic;
+        }
+    }
+    pre{
+        -webkit-overflow-scrolling: touch;
+        overflow-x: auto;
+        padding: $content-pre-padding;
+        white-space: pre;
+        word-wrap: normal;
+    }
+    sup, sub{
+        font-size: 75%;
+    }
+    table{
+        width: 100%;
+        td, th{
+            border: $content-table-cell-border;
+            border-width: $content-table-cell-border-width;
+            padding: $content-table-cell-padding;
+            vertical-align: top;
+        }
+        th{
+            color: $content-table-cell-heading-color;
+            &:not([align]){
+                text-align: left;
+            }
+        }
+        thead{
+            td, th{
+                border-width: $content-table-head-cell-border-width;
+                color: $content-table-head-cell-color;
+            }
+        }
+        tfoot{
+            td, th{   
+                border-width: $content-table-foot-cell-border-width;
+                color: $content-table-foot-cell-color;
+            }
+        }
+        tbody{
+            tr{
+                &:last-child{
+                    td, th{
+                        border-bottom-width: 0
+                    }
+                }
+            }
+        }
+    }
+    .tabs{
+        li + li{
+            margin-top: 0
+        }
+    }
+    &.is-small{
+        font-size: $size-small
+    }
+    &.is-medium{
+        font-size: $size-medium
+    }
+    &.is-large{
+        font-size: $size-large
+    }
+    &:not(:last-child){
+        margin-bottom: $block-spacing;
+    }
+}
+    

@@ -1,0 +1,26 @@
+// $title-color: $text-strong;
+$title-family: $family-secondary;
+// $title-size: $size-3;
+$title-weight: $weight-normal;
+// $title-line-height: 1.125;
+// $title-strong-color: inherit;
+// $title-strong-weight: inherit;
+// $title-sub-size: 0.75em;
+// $title-sup-size: 0.75em;
+
+// $subtitle-color: $text;
+$subtitle-family: $family-secondary;
+// $subtitle-size: $size-5;
+// $subtitle-weight: $weight-normal;
+// $subtitle-line-height: 1.25;
+// $subtitle-strong-color: $text-strong;
+// $subtitle-strong-weight: $weight-semibold;
+// $subtitle-negative-margin: -1.25rem;
+
+@import "bulma/sass/elements/title.sass";
+
+.title{
+    &.is-3, &.is-4, &.is-5, &.is-6, &.is-7{
+        font-weight: $weight-semibold;
+    }
+}

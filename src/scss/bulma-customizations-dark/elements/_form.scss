@@ -1,0 +1,35 @@
+$input-color-dark: $text-dark;
+$input-background-color-dark: $scheme-invert;
+$input-border-color-dark: $border-dark;
+$input-shadow-dark: none;
+$input-placeholder-color-dark: rgba($input-color-dark, 0.3);
+
+$input-hover-color-dark: $text-strong-dark;
+$input-hover-border-color-dark: $border-hover-dark;
+
+$input-focus-color-dark: $text-strong-dark;
+$input-focus-border-color-dark: $link-dark;
+$input-focus-box-shadow-size: 0;
+$input-focus-box-shadow-color-dark: transparent;
+
+$input-disabled-color-dark: $text-dark;
+$input-disabled-background-color-dark: $background-dark;
+$input-disabled-border-color-dark: $background-dark;
+$input-disabled-placeholder-color-dark: rgba($input-disabled-color-dark, 0.3);
+
+$input-arrow-dark: $link-dark;
+
+$input-icon-color-dark: $border-dark;
+
+// $file-border-color-dark: $border-dark;
+
+// $file-cta-background-color-dark: $black-ter;
+// $file-cta-color-dark: $grey-light;
+// $file-cta-hover-color-dark: $grey-lighter;
+// $file-cta-active-color-dark: $grey-lighter;
+
+// $file-name-border-color-dark: $border-dark;
+
+$label-color-dark: $text-dark;
+
+@import 'bulma-prefers-dark/sass/elements/form.sass';

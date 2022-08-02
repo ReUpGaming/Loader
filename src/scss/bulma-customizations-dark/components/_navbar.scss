@@ -1,0 +1,34 @@
+$navbar-background-color-dark: $scheme-invert;
+// $navbar-box-shadow-size: 0 2px 0 0;
+$navbar-box-shadow-color-dark: $background-dark;
+
+$navbar-item-color-dark: $text-strong-dark;
+$navbar-item-hover-color-dark: $white;
+$navbar-item-hover-background-color-dark: transparent;
+$navbar-item-active-color-dark: $primary;
+$navbar-item-active-background-color-dark: transparent;
+
+// $navbar-burger-color-dark: $navbar-item-color-dark;
+
+// $navbar-tab-hover-border-bottom-color-dark: $link-dark;
+// $navbar-tab-active-color-dark: $link-dark;
+// $navbar-tab-active-border-bottom-color-dark: $link-dark;
+
+// $navbar-dropdown-background-color-dark: $black;
+// $navbar-dropdown-border-top-dark: 2px solid $border-dark;
+// $navbar-dropdown-arrow-dark: $link-dark;
+
+// $navbar-dropdown-boxed-shadow-dark: 0 8px 8px rgba($white, 0.1), 0 0 0 1px rgba($white, 0.1);
+
+// $navbar-dropdown-item-hover-color-dark: $white;
+// $navbar-dropdown-item-hover-background-color-dark: $background-dark;
+// $navbar-dropdown-item-active-color-dark: $link-dark;
+// $navbar-dropdown-item-active-background-color-dark: $background-dark;
+
+// $navbar-divider-background-color-dark: $background-dark;
+
+// $navbar-bottom-box-shadow-size: 0 -2px 0 0;
+
+// $navbar-breakpoint: $desktop;
+
+@import 'bulma-prefers-dark/sass/components/navbar.sass';

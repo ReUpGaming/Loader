@@ -1,0 +1,28 @@
+$input-color: $text;
+// $input-background-color: $scheme-main;
+$input-border-color: $border-light;
+// $input-height: $control-height;
+$input-shadow: none;
+// $input-placeholder-color: rgba($input-color, 0.3);
+
+// $input-hover-color: $text-strong;
+$input-hover-border-color: $border-light-hover;
+
+// $input-focus-color: $text-strong;
+// $input-focus-border-color: $link;
+$input-focus-box-shadow-size: 0;
+$input-focus-box-shadow-color: transparent;
+
+// $input-disabled-color: $text-light;
+// $input-disabled-background-color: $background;
+// $input-disabled-border-color: $background;
+// $input-disabled-placeholder-color: rgba($input-disabled-color, 0.3);
+
+// $input-arrow: $link;
+
+// $input-icon-color: $border;
+// $input-icon-active-color: $text;
+
+// $input-radius: $radius;
+
+@import 'bulma/sass/form/shared.sass';

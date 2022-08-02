@@ -1,0 +1,16 @@
+$modal-background-background-color-dark: rgba($scheme-main-bis, 0.86);
+
+// $modal-card-head-background-color-dark: $background-dark;
+// $modal-card-head-border-bottom-dark: 1px solid $border-dark;
+
+// $modal-card-title-color-dark: $text-strong-dark;
+
+// $modal-card-foot-border-top-dark: 1px solid $border-dark;
+
+// $modal-card-body-background-color-dark: $white;
+
+@import 'bulma-prefers-dark/sass/components/modal.sass';
+
+.modal-close {
+	position: fixed !important;
+}

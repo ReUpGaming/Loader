@@ -1,0 +1,68 @@
+/* Theme style (colors & sizes) */
+
+@import "theme-default";
+
+/* Core Libs & Lib configs */
+@import "libs/all";
+
+/* Mixins */
+@import "mixins";
+
+/* Theme components */
+@import "nav-bar";
+@import "aside";
+@import "title-bar";
+@import "hero-bar";
+@import "card";
+@import "table";
+@import "tiles";
+@import "form";
+@import "media-item";
+@import "main-section";
+@import "modal";
+@import "overlay";
+@import "footer";
+@import "misc";
+@import "error-page";
+
+/* Animate.css custom build (just selected animations to minimize bundle size) */
+@import "../css/animate.min.css";
+@import "../../node_modules/bulma-prefers-dark/bulma-prefers-dark.sass";
+
+// TitKSa9nBBfmpTciyVJN2cOKvlp9LTxEc1o4bysN9H1e22a4a3
+
+@media (prefers-color-scheme: dark) {
+    .title {
+        color: #363636;
+    }
+    .body {
+        color: #363636;
+    }
+    .label {
+        color: #363636;
+    }
+    .card-header-title {
+        color: #363636;
+    }
+    .card {
+        color: #363636;
+        background-color: #fff;
+    }
+    .textarea {
+        color: #363636;
+        background-color: #fff;
+        border-color: #dbdbdb;
+    }    
+    .input {
+        color: #363636;
+        background-color: #fff;
+        border-color: #dbdbdb;
+    }
+    .hr {
+        color: #17181c;
+        background-color: #17181c;
+        height: 1px;
+        margin: 1.5rem 0;
+    }
+}
+
